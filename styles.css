@@ -1,0 +1,33 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    cursor: default;
+}
+body {
+    margin: 0;
+    overflow: hidden;
+}
+#banner {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+a {
+    color: black;
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+a:hover { cursor: pointer; }
+a:active { color: dodgerblue; }
+#number {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 160px;
+    font-weight:600;
+}
