@@ -1,4 +1,4 @@
-# number-web
+# Number Web
 The simplified html version of [charlesyiu/number-app](https://github.com/charlesyiu/number-app)
 # Controls
 ## Left Click
