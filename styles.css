@@ -31,3 +31,11 @@ a:active { color: dodgerblue; }
     font-size: 160px;
     font-weight:600;
 }
+#button {
+    border: none;
+    background-color: transparent;
+    font-size: medium;
+    margin: 0;
+}
+#button:hover { cursor: pointer; }
+#button:active { color: dodgerblue; }

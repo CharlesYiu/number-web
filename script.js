@@ -4,12 +4,12 @@ function UpdateNumberLabel() {
     NumberLabel.textContent = NumberValue.toString();
 }
 // on left click
-window.onclick = function() {
+NumberLabel.onclick = function() {
     NumberValue += 1;
     UpdateNumberLabel();
 }
 // on right click
-window.oncontextmenu = function() {
+NumberLabel.oncontextmenu = function() {
     NumberValue -= 1;
     UpdateNumberLabel();
     return false;
@@ -54,7 +54,7 @@ window.onkeyup = function(event) {
 window.onmousemove = function(event) {
     // negative number
     NegativeNumber = event.clientX < (NumberLabel.clientWidth / 2);
-    if (NegativeNumber !== LastNegativeNumber) {
+    if (NegativeNumber !== LastNegativeNumber && RunningSpaceLoop) {
         if (NegativeNumber) {
             NumberValue = -Math.abs(NumberValue);
         } else {
@@ -65,4 +65,7 @@ window.onmousemove = function(event) {
     }
     // add number
     AddNumber = event.clientY < (NumberLabel.clientHeight / 2);
+};
+document.getElementById("button").onclick = function() {
+    document.getElementById("banner").hidden = true;
 };
